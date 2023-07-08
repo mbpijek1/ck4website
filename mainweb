@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team ck4 | Exploiting community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script type='text/javascript' src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6253866984718433"
+    
+     crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="z-index:0" class="bg-dark/20">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+    .preload{
+      position:fixed;
+      top:0;
+      width: 100%;
+      height: 100vh;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease
+    }
+    .preload-finish{
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+  <div id="preload" class="preload bg-black">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*e_Loq49BI4WmN7o9ItTADg.gif" alt=""/>
+  </div>
+  <script>
+    window.addEventListener('load',()=>{
+      const preload = document.getElementById('preload')
+      preload.classList.add('preload-finish')
+    })
+  </script>
+    <style>
+        .videothing {
+      object-fit: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+        }
+    
+    .endstart {
+     z-index: -100;
+    }
+    </style>
+    <div id="start" style="color:rgb(233, 9, 9); background-size:cover; background-color:rgb(255, 0, 0);    height: 100vh;  transition: height 1s ease;">
+        <h1 id="start-text" class="text-4xl text-center text-slate-300 font-bold" style="transition: opacity 1s ease">Click anywhere to continue.</h1>
+        </div>
+    <video draggable="false" playsinline="" muted  loop class="" id="myVideo">
+        <source src="stylesheets/images/topg.mp4" type="video/mp4">
+      </video>
+
+
+      <script>
+function disable() {
+// To get the scroll position of current webpage
+TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+
+// if scroll happens, set it to the previous value
+window.onscroll = function() {
+window.scrollTo(LeftScroll, TopScroll);
+        };
+}
+
+function enable() {
+window.onscroll = function() {};
+}
+disable()
+        const div = document.getElementById('start')
+        const vid = document.getElementById('myVideo')
+        const audio = new Audio("/stylesheets/images/song.mp3");
+        audio.loop = true
+        div.addEventListener('click',function(){
+            $('#start').css("height", "0vh");
+            $('#start-text').css("opacity", "0");
+            $('#start').addClass("endstart");
+
+
+            audio.play()
+          myVideo.play()
+
+          enable()
+          vid.classList.add('videothing')
+        })
+    </script>
+  <style>
+    ::-webkit-scrollbar{
+      display:none;
+    }
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+    <nav>
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://discord.gg/cSH24nTFWV" class="flex items-center">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">CK4</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden text-white" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open discord</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+         
+      </nav>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#121112',
+              outline: '#1b1a1b',
+              textcolor: '#99aee6',
+              hover: '#1c2b4e',
+              hover2: '#5875ae',
+              blue: '#0071f4',
+
+            }
+          }
+        }
+      }
+    </script>
+      <section class="bg-black/30 border-b border-t border-outline border-opacity-10">
+        <div class="mx-auto px-8 md:px-16 py-8 lg:flex" data-aos="fade-down">
+
+        <div class="mx-auto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZU8qjhEtCdEMjve9YAeASV340gpoBgrIsg&usqp=CAU" class="w-16 mx-auto h-16 rounded-full">
+          <h1 class="text-4xl text-center font-bold text-white">Team C00lkidd 4</h1>
+          <p class="text-zinc-400 text-center text-lg mt-3">The best explotiing community.</p>
+          <div class="mt-10">
+            <ul class="text-white gap-8 flex">
+              <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Scripts</li>
+              <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Expirienced staff</li>
+              <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Reliable and Nice Community</li>
+
+            </ul>
+          </div>
+          </div>  
+          
+        </div>
+      </section>
+      <section class="border-b border-outline border-opacity-10">
+        <div class="mx-auto max-w-screen-xl lg:flex py-8">
+        <div class="bg-black/40 rounded-lg max-w-xl mx-auto text-center" data-aos="fade" data-aos-delay="300">
+          <h1 class="text-white font-semibold mb-3 text-3xl">Trusted by people</h1>
+          <p class="text-gray-300">Everyone who has ever joined ck4 loved being there.</p>
+        </div>
+      </div>
+      <div class="gap-8 grid lg:grid-cols-3 py-16 sm:grid-cols-1 md:grid-cols-2 lg:px-32 md:px-16 px-4">
+        <div class="bg-black/50 p-5 border rounded-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://yt3.ggpht.com/F5ZFyFSmL6rUVlbdo9ag-MV2ifObXW5jnFp5mTWDb8Uu6PMPq-Sx_uCBGOPJby1aooyK8DgXGw=s176-c-k-c0x00ffffff-no-rj-mo" class="w-16 h-16 rounded-full">
+          <h1 class="text-white text-3xl font-semibold mt-5">c00lbxbby</h1>
+          <h2 class="text-zinc-500 mb-5">Leader of ck4</h2>
+          <p class="text-white text-sm">Best expirience of my life.
+          </p>
+  
+        </div>
+
+        <div class="bg-black/50 p-5 border rounded-lg" data-aos="fade-up" data-aos-delay="600">
+          <img src="data:image/jpeg;base64,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" class="w-16 h-16 rounded-full">
+          <h1 class="text-white text-3xl font-semibold mt-5">Mirai</h1>
+          <h2 class="text-zinc-500 mb-5">Founder of ck4</h2>
+          <p class="text-white text-sm">Wow, i never knew we would make such a great community!
+
+          </p>
+  
+        </div>
+
+        <div class="bg-black/50 p-5 border rounded-lg" data-aos="fade-up" data-aos-delay="900">
+          <img src="https://cdn.discordapp.com/attachments/1115681665939947572/1127237403711635576/cropped_pfp.jpg" class="w-16 h-16 rounded-full">
+          <h1 class="text-white text-3xl font-semibold mt-5">R3kter</h1>
+          <h2 class="text-zinc-500 mb-5">Owner of ck4.</h2>
+          <p class="text-white text-sm">I love being in CK4! The best server ever.
+
+ 
+
+          </p>
+  
+        </div>
+
+
+        
+      </div>
+      </section>
+      <section class="border-b border-outline border-opacity-10">
+        <div class="grid lg:px-32 px-4 py-16 gap-8 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1" data-aos="fade-right" data-aos-delay="200">
+          <div>
+              <h1 class="text-3xl mb-10 font-semibold text-white">About C00lkidd 4</h1>
+
+
+
+
+
+<div class="bg-black/50 p-5 shadow shadow-zinc-500 rounded-lg">
+    <div class="border-b border-outline  py-4">
+    <h2 class="text-white text-3xl font-semibold">Team C00lkidd 4</h2>
+    <h1 class="text-zinc-500 text-lg font-thin">Team C00lkidd 4, join to have full experience of exploiting on roblox!</span></h1>
+  <button onclick="window.location.replace('discord.gg/cSH24nTFWV')" class="bg-blue w-full text-white rounded-lg py-3 mt-5 font-semibold">Link</button>
+</div>
+
+&nbsp;
+
+
+
+                </div>
+                &nbsp;
+                <div class="bg-black/50 p-5 shadow shadow-zinc-500 rounded-lg">
+                    <div class="border-b border-outline  py-4">
+                    <h2 class="text-white text-3xl font-semibold">C00lkidd Gui V2</h2>
+                    <h1 class="text-zinc-500 text-lg font-thin">C00lkidd Gui V2 is one of the best guis for exploiting and destroying servers currently on the market!</span></h1>
+                  <button onclick="window.location.replace('https://raw.githubusercontent.com/mbpijek1/c00lkidd-v2/main/main.lua')" class="bg-blue w-full text-white rounded-lg py-3 mt-5 font-semibold">Link</button>
+                </div>
+      </section>
+      <section class=" border-b border-outline border-opacity-10">
+    
+
+
+
+
+
+
+
+  <button onclick="window.location.replace('https://discord.gg/cSH24nTFWV')" class="bg-blue justify-center text-center hover:bg-sky-500  w-full text-white  wd-1 py-10 mt-5 font-semibold">Join Team C00lkid!</button>
+
+
+      </section>
+      
+      <section>
+        <footer>
+          <div class="flex items-center mt-10 justify-center">
+            <ul class="text-white font-semibold flex gap-8">
+              <li><a href="https://discord.gg/yw8tpeP4e4" >Discord</a></li>
+            </ul>
+          </div>
+          <div class="text-zinc-500 flex items-center justify-center py-8">
+            <h1>Copyright 2023 Team C00lkidd 4</h1>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>
